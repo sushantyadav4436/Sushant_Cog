@@ -7,7 +7,7 @@ from pypdf import PdfReader
 from google import genai
 from google.genai import types
 
-MODEL = os.getenv("gemini-3.8-flash", "gemini-2.5-flash")
+MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 MAX_CLAIMS = 15          # keep low to stay inside free-tier limits
 PAUSE_SECONDS = 7        # free tier allows only a few requests per minute
 
